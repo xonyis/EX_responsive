@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SET-UP */
+
+html {
+    --green: #99d98c;
+    --red: #ED6A5A;
+    --blue: #80CED7;
+    --grey: #d8e2dc;
+    --yellow: #FFD151;
+    font-size: 16px;
+}
+
+.nav-green {
+    width: 95%;
+    height: 4em;
+    margin:1em auto;
+    background: var(--green);
+}
+.flex-warper {
+    display: flex;
+    flex-flow: wrap;
+}
+
+/* =============== */
+
+/* RED */
+.red-container {
+    width: 95%;
+    height: 25em;
+    margin: auto;
+    background: var(--red);
+}
+
+/* GREY */
+#grey-element {
+    width: 95%;
+    height: 4em;
+    margin: 1em auto;
+    background: var(--grey);
+}
+
+/* YELLOW */
+#yellow-content{
+    
+    width: 45%;
+    height: 5em;
+    margin: 0.5em auto;
+    background: var(--yellow);
+}
+
+/* BLUE */
+
+.blue-warper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+}
+
+
+.blue-content {
+    background: var(--blue);
+    width: 95%;
+    height: 5em;
+    margin: 0.5em auto;
+}
+#blue-truc{
+    width: 45%;
+}
+
+#blue-smFull {
+    height: 3em;
+}
+
+
+/* =============== */
+@media (min-width:900px) {
+    #blue-truc {
+        width: 95%; 
+    }
+
+    .red-container {
+        width: 65%;
+        margin: 2.5%;
+    }
+
+    #grey-element {
+        width: 35%;
+        height: 10em;
+        margin: 0.5em 2em;
+    }
+
+    #yellow-content {
+        width: 27.5%;
+        height: 10em;
+        margin: 0.5em;
+    }
+    .blue-warper {
+        position: absolute;
+        top: 7em;
+        right: 2em;
+        width: 30%;
+    }
+
+    .blue-warper div{
+        height: 12.5em;
+    }
+    #blue-smFull {
+        height: 10.5em;
+    }
+}
+
+@media (max-width:890px) {
+    .blue-warper {
+        width: 100%;
+    }
+    #blue-truc {
+        position: absolute;
+        width: 45%;
+        right: 1em;
+        top: 37em;
+    }
+    
+    #yellow-content {
+        width: 45%;
+        margin: 0.5em;
+    }
+}
