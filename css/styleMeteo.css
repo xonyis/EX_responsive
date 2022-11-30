@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(58, 58, 58);
+    color: aliceblue;
+}
+
+header h2 {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+#flex-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#flex-itm-l {
+    display: flex;
+    justify-content: center;
+}
+
+#flex-itm-l span{
+    font-size: 35px;
+}
+
+/* GRID */
